@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(60, 70, 78);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-bottom: 1px solid rgb(185, 7, 185);
+}
+
+span{
+    color: rgb(185, 7, 185,0.8);
+}
+
+.nav-right ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 0.6rem;
+}
+
+li{
+    margin-left: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(185, 7, 185,0.8);
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+}
+
+#mail{
+    font-size: 0.6rem;
+    width: 9.5rem;
+    height: 1.3rem;
+}
+
+#sub-button{
+    font-size: 0.5rem;
+    background-color: red;
+    border: none;
+    color: white;
+    height: 1.2rem;
+    padding: 0.3rem 0.6rem;
+    margin-left: 0.4rem;
+    cursor: pointer;
+}
+
+.bottom{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgba(247, 240, 240, 0.836);
+}
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 1rem;
+    text-align: center;
+}
+
+.tools h6{
+    margin: 1rem;
+    font-weight: bolder;
+}
+
+.tools p{
+    font-size: 0.7rem;
+}
+
+.footer{
+    border: 1px solid black;
+    background-color:rgb(60, 70, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.footer img{
+    width: 8rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+
+.sub-mail{
+    background-color:rgb(60, 70, 78);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.main-services{
+    /* border: 3px solid red; */
+    display: flex;
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 0.8rem;
+    word-spacing: 0.3rem;
+    color: rgba(0, 0, 0, 0.7);
+    background-color:rgb(237, 241, 241);
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left{
+    /* border: 1px solid red; */
+    margin-right: 1.5rem;
+    width: 70%;
+}
+
+
+
+
+.right{
+    /* border: 1px solid green; */
+    margin-left: 1.5rem;
+    background-color:rgb(60, 70, 78);
+    color: white;
+    padding: 1.5rem 1.5rem 0.5rem 0.5rem;
+    width: 30%;
+    font-size: 0.7rem;
+}
+
+.prices{
+    /* border: 1px solid black; */
+    padding: 20px 2.5rem 20px 1rem;
+    margin-bottom: 0.3rem;
+    background-color:rgb(221, 226, 230);
+}
+
+.title{
+    color: black;
+    font-weight: bolder;
+}
+
+.prices h4{
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.prices p{
+    margin-bottom: 10px;
+}
+
+.right h4{
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 0.6rem;
+    width: 100%;
+    padding: 2px 0;
+    margin: 1px 0;
+}
+
+form textarea{
+    font-size: 0.6rem;
+    width: 100%;
+    padding: 2px 0;
+    margin: 1px 0;
+}
+
+#button{
+    padding: 7px 0.8rem;
+    font-size: 0.6rem;
+    background-color: red;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    border: none;
+    cursor:pointer;
+}
+
+#service-color{
+    color: rgb(185, 7, 185,0.8);
+}
+
+@media screen and (min-width: 1450px){
+    .main-services{
+        height: 780px;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+
+    #mail{
+        width: 5rem;
+        
+    }
+
+    #subs h4{
+        font-size: 0.7rem;
+    }
+
+    .navbar{
+        font-size: 0.7rem;
+    }
+
+    .nav-right ul{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .main-services .right{
+        overflow-y: scroll;
+        height: 10rem;
+    }
+    form {
+       overflow: scroll;
+       text-align: center;
+    }
+
+    .prices{
+        height: 10rem;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

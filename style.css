@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(60, 70, 78);
+    color: white;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(185, 7, 185);
+}
+
+span{
+    color: rgb(185, 7, 185,0.8);
+}
+
+.nav-right ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 0.6rem;
+}
+
+li{
+    margin-left: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(185, 7, 185,0.8);
+}
+
+.top{
+    background-image: url(./img/showcase.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8rem;
+    color: rgba(255, 255, 255,0.8);
+    font-size: 0.9rem;
+  
+    
+}
+
+.top h1{
+    margin-bottom: 1rem;
+}
+
+.middle{
+    background-color:rgb(60, 70, 78);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+}
+
+#mail{
+    font-size: 0.6rem;
+    width: 9.5rem;
+    height: 1.3rem;
+}
+
+#sub-button{
+    font-size: 0.5rem;
+    background-color: red;
+    border: none;
+    color: white;
+    height: 1.2rem;
+    padding: 0.3rem 0.6rem;
+    margin-left: 0.4rem;
+    cursor: pointer;
+}
+
+.bottom{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgba(247, 240, 240, 0.836);
+}
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 1rem;
+    text-align: center;
+}
+
+.tools h6{
+    margin: 1rem;
+    font-weight: bolder;
+}
+
+.tools p{
+    font-size: 0.7rem;
+}
+
+.footer{
+    border: 1px solid black;
+    background-color:rgb(60, 70, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.footer img{
+    width: 8rem;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+
+.sub-mail{
+    background-color:rgb(60, 70, 78);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.7rem;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.main-about{
+    /* border: 5px solid red; */
+    background-color:rgba(211, 211, 211,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 500px;
+    padding: 1rem 1.7rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+
+
+}
+
+.left{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    margin-right: 1.5rem;
+    
+    
+
+}
+
+
+
+.left-dark{
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.right{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    margin-left: 1.5rem;
+    padding: 1rem 1rem;
+   
+} 
+
+.right p{
+    margin-top: 1rem;
+}
+
+.main-about h3{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.dark{
+    background-color:rgb(60, 70, 78);
+    color: rgb(255, 255, 255,0.8);
+}
+
+.dark h3{
+    color: white;
+}
+
+#about-color{
+    color: rgb(185, 7, 185,0.8);
+}
+
+#index-color{
+    color: rgb(185, 7, 185,0.8);
+}
+
+@media screen and (min-width: 1450px){
+    .top{
+        height: 550px;
+    }
+
+    .bottom{
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    *{
+        /* font-size: 0.9rem; */
+    }
+
+    #mail{
+        width: 5rem;
+        
+    }
+
+    #subs h4{
+        font-size: 0.7rem;
+    }
+
+    .navbar{
+        font-size: 0.7rem;
+    }
+
+    .nav-right ul{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .left-light {
+        max-height: 10rem;
+        overflow-y: scroll;
+    }
+
+    .left-dark {
+        max-height: 10rem;
+        overflow-y: scroll;
+    }
+
+    .right{
+        max-height: 10rem;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
